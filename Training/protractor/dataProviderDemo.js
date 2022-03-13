@@ -3,14 +3,7 @@ var using = require('jasmine-data-provider');
 
 
 describe('Protractor Demo App', function() {
-  function testdata() {
-    return [
-      {a: 12,b : 12,c : 24},
-      {a: 120,b : 120,c : 240},
-      {a: 2,b : 2,c : 4}
-    ]
-  }
-  using(testdata,function(data){
+  using([{a: 12,b : 12,c : 24},{a: 120,b : 120,c : 240},{a: 2,b : 2,c : 4}],function(data){
     it('Basic Calculator Operations', function() {
       browser.get(Objects.url);
       browser.sleep(Objects.stdWaitTime).then(function(){

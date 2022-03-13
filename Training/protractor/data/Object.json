@@ -1,0 +1,18 @@
+{
+    "url" : "http://juliemr.github.io/protractor-demo/",
+    "timeout" : 300000,
+    "stdWaitTime" : 10000,
+    
+
+    "locators" : {
+
+        "homepage" : {
+              "ng_first_number" :  "first",
+              "ng_second_number" : "second",
+              "id_go_button"    : "gobutton"  
+        },
+        "dashboardpage" : {
+
+        }
+    }
+}
